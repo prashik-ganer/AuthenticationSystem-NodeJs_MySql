@@ -1,0 +1,67 @@
+
+<body>
+
+
+<div class="container col-6 border border-2 my-5 p-4 shadow p-3 mb-5 bg-body rounded">
+
+    <form action="/register" method="post">
+
+    <div class="mb-3">
+        <label class="form-label">First Name</label>
+        <input type="text" class="form-control" name="firstname">
+    </div><div class="mb-3">
+        <label class="form-label">Last Name</label>
+        <input type="text" class="form-control" name="lastname">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Phone Number</label>
+        <input type="number" class="form-control" name="phone">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{user_email}}">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="text" class="form-control" name="password">
+        <div id="emailHelp" class="form-text">Password should contain atleast one uppercase, lowercase, a number and a a symbol.</div>
+
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+        <input type="text" class="form-control" name="cpassword">
+    </div>
+
+   
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Age</label>
+        <input type="number" class="form-control" name="age">
+    </div>
+    <button type="submit" name="register" class="btn btn-outline-warning">Submit</button>
+    </form>
+
+</div>
+
+
+
+
+
+{{!-- {{>navbar}}
+
+<div class="login-page">
+  <div class="form">
+    <form action="/register" method="post" class="login-form">
+      <input type="text" name="firstname" placeholder="First Name"/>
+      <input type="text" name="lastname" placeholder="Last Name"/>
+      <input type="number" name="phone" placeholder="Phone Number"/>
+      <input type="email" name="email" placeholder="Email"/>
+      <input type="password" name="password" placeholder="password"/>
+      <input type="password" name="cpassword" placeholder="Confirm password"/>
+      <input type="number" name="age" placeholder="Age"/>
+      <button type="submit" name="register">create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+  </div>
+</div> --}}
+

@@ -3,6 +3,8 @@ const express = require("express");
 const exphbs = require("express-handlebars")
 const bodyParser = require("body-parser")
 const mysql = require("mysql")
+const cookieParser = require("cookie-parser")
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -13,6 +15,7 @@ app.use(express.urlencoded({extended: false}))
 
 // Parsse application/json
 app.use(bodyParser.json())
+app.use(cookieParser())
 
 // static files
 app.use(express.static('public'));

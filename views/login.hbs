@@ -1,0 +1,97 @@
+<div class="container d-flex justify-content-end pb-5 pt-5 mx-4">
+
+  <div class="container my-">
+    <div class="row">
+    <div class="col-4 align-self-start">
+      
+    </div>
+    <div class="col-4 my-auto align-self-center">
+      SENSELIVE
+    </div>
+    <div class="col-4 align-self-end">
+    </div>
+  </div>
+  </div>
+  <div class="container col-4 border border-2 my-5 p-4 shadow p-3 mb-5 bg-body rounded">
+
+    <form action="/login" method="post">
+      <h2 class="" style="font-family:Arial, Helvetica, sans-serif"><b>Login</b></h2>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Email" name="email">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Password" name="password">
+      </div>
+      <div class="d-flex flex-column bd-highlight">
+
+        <button type="submit" name="login" class="btn btn-outline-warning">Login</button>
+
+      </div>
+      <div class="form-text d-flex justify-content-center">Don't have an account? <a href="/">SignUp</a></div>
+      <hr>
+    </form>
+
+
+    
+
+    <form action="/forgot_password_step_1" method="get">
+      <div class="form-text d-flex justify-content-center">
+        <a href="/forgot_password_step_1">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
+
+</div>
+{{!--
+{{#if removed_user}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong>
+  {{removed_user}}
+  This user has been removed
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+
+<div class="row">
+  <div class="col-6">
+    <h1 style="font-family: poppins-black">USERS</h1>
+  </div>
+  <div class="col-6 d-flex justify-content-end">
+    <a href="/adduser" type="button" class="btn btn-primary align-self-center">+ add user</a>
+  </div>
+</div>
+
+
+<table class="table table-bordered">
+  <thead class="thread-dark">
+    <tr>
+      <th class="p-4" scope="col">#</th>
+      <th class="p-4" scope="col">First Name</th>
+      <th class="p-4" scope="col">Last Name</th>
+      <th class="p-4" scope="col">Email</th>
+      <th class="p-4" scope="col">Phone</th>
+      <th class="p-4" scope="col" class="text-end">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each rows}}
+    <tr>
+      <th class="p-4" scope="row">{{this.id}}</th>
+      <td class="p-4">{{this.first_name}}</td>
+      <td class="p-4">{{this.last_name}}</td>
+      <td class="p-4">{{this.email}}</td>
+      <td>{{this.phone}}</td>
+      <td class="text-end class=" p-4"">
+        <a href="/viewuser/{{this.id}}" type="button" class="btn btn-light btn-small"><i class="bi bi-eye">View</i></a>
+        <a href="/edituser/{{this.id}}" type="button" class="btn btn-light btn-small"><i
+            class="bi bi-pencil">Edit</i></a>
+        <a href="/{{this.id }}" type="button" class="btn btn-light btn-small"><i class="bi bi-person-x">Delete</i></a>
+
+
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table> --}}
